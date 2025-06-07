@@ -5,6 +5,9 @@ RSMambaReg: Continual Learning on Remote Sensing Image Classification with State
 Will be posted after paper published.
 
 # Proposed Architecture
+This repository is adopted from paper <a href='https://github.com/KyanChen/RSMamba'>RSMamba: Remote Sensing Image Classification with State Space Model</a>, which is based on the <a href='https://github.com/open-mmlab/mmpretrain'>MMPretrain project</a>.
+
+
 The process framework for continual learning adopted in this study demonstrates the step-by-step methodology applied to sequential datasets.
 
 ![image](https://github.com/user-attachments/assets/45aa9671-e7c4-4993-8305-517f33a13c29)
