@@ -43,3 +43,41 @@ Note: If you are experienced with PyTorch and have already installed it, you can
 ```bash
 conda create -n rsmamba python=3.11 -y
 conda activate rsmamba
+````
+
+### Step 2: Install [PyTorch2.2.x.](https://pytorch.org/get-started/locally/)
+
+Linux/Windows:
+
+```bash
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu121 -y
+````
+
+or
+
+```bash
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=12.1 -c pytorch -c nvidia -y
+````
+
+
+### Step 3: Install [MMCV2.1.x.](https://mmcv.readthedocs.io/en/latest/get_started/installation.html)
+
+
+```bash
+pip install -U openmim
+mim install mmcv==2.1.0
+# or
+pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu121/torch2.1/index.html
+````
+
+### Step 4: Install other dependencies.
+
+
+```bash
+pip install -U mat4py ipdb modelindex
+pip install transformers==4.39.2
+pip install causal-conv1d==1.2.0.post2
+pip install mamba-ssm==1.2.0.post1
+````
+
+
