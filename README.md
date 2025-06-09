@@ -123,7 +123,9 @@ If you want to use other datasets, you can refer to the [MMPretrain documentatio
 ### Single Card Training
 
 ```bash
-python tools/trainrsmambareg.py configs/rsmamba/name_to_config.py  # name_to_config.py is the configuration file you want to use
+python tools/trainrsmambareg1.py configs/rsmamba/name_to_config.py  # name_to_config.py is the configuration file you want to use
+python tools/trainrsmambareg2.py configs/rsmamba/name_to_config.py  # name_to_config.py is the configuration file you want to use
+python tools/trainrsmambareg3.py configs/rsmamba/name_to_config.py  # name_to_config.py is the configuration file you want to use
 ````
 
 # Model Testing
@@ -132,6 +134,6 @@ python tools/trainrsmambareg.py configs/rsmamba/name_to_config.py  # name_to_con
 ### Single Card Testing
 
 ```bash
-python tools/test.py configs/rsmamba/name_to_config.py ${CHECKPOINT_FILE}  # name_to_config.py is the configuration file you want to use, CHECKPOINT_FILE is the checkpoint file you want to use
+python tools/test_conf.py configs/rsmamba/name_to_config.py ${CHECKPOINT_FILE}  # name_to_config.py is the configuration file you want to use, CHECKPOINT_FILE is the checkpoint file you want to use
 ````
 
