@@ -90,10 +90,10 @@ We provide the method of preparing the remote sensing image classification datas
 Image and annotation download link: [UC Merced Dataset.](http://weegee.vision.ucmerced.edu/datasets/landuse.html)
 
 ### Aerial Image Dataset (AID)
-Image and annotation download link: [AID.]([http://weegee.vision.ucmerced.edu/datasets/landuse.html](https://www.kaggle.com/datasets/jiayuanchengala/aid-scene-classification-datasets))
+Image and annotation download link: [AID.](https://www.kaggle.com/datasets/jiayuanchengala/aid-scene-classification-datasets)
 
 ### NWPU RESISC45 Dataset
-Image and annotation download link: [NWPU RESISC45.]([http://weegee.vision.ucmerced.edu/datasets/landuse.html](https://aistudio.baidu.com/datasetdetail/220767))
+Image and annotation download link: [NWPU RESISC45.](https://aistudio.baidu.com/datasetdetail/220767)
 
 ### Data Organization Method
 You can also choose other sources to download the data, but you need to organize the dataset in the following format：
