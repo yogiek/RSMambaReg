@@ -80,4 +80,58 @@ pip install causal-conv1d==1.2.0.post2
 pip install mamba-ssm==1.2.0.post1
 ````
 
+# Dataset Preparation
+
+
+### Remote Sensing Image Classification Dataset
+We provide the method of preparing the remote sensing image classification dataset used in the paper.
+
+### UC Merced Dataset
+Image and annotation download link: [UC Merced Dataset.](http://weegee.vision.ucmerced.edu/datasets/landuse.html)
+
+### Aerial Image Dataset (AID)
+Image and annotation download link: [AID.]([http://weegee.vision.ucmerced.edu/datasets/landuse.html](https://www.kaggle.com/datasets/jiayuanchengala/aid-scene-classification-datasets))
+
+### NWPU RESISC45 Dataset
+Image and annotation download link: [NWPU RESISC45.]([http://weegee.vision.ucmerced.edu/datasets/landuse.html](https://aistudio.baidu.com/datasetdetail/220767))
+
+### Data Organization Method
+You can also choose other sources to download the data, but you need to organize the dataset in the following format：
+
+```bash
+${DATASET_ROOT} # Dataset root directory, for example: /home/username/data/UC
+├── airplane
+│   ├── airplane01.tif
+│   ├── airplane02.tif
+│   └── ...
+├── ...
+├── ...
+├── ...
+└── ...
+````
+
+Note: In the project folder datainfo, we provide the data set partition file. You can also use the Python script to divide the data set.
+
+
+### Other Datasets
+If you want to use other datasets, you can refer to the [MMPretrain documentation](https://mmpretrain.readthedocs.io/en/latest/user_guides/dataset_prepare.html) for dataset preparation.
+
+
+# Model Training
+
+
+### Single Card Training
+
+```bash
+python tools/trainrsmambareg.py configs/rsmamba/name_to_config.py  # name_to_config.py is the configuration file you want to use
+````
+
+# Model Testing
+
+
+### Single Card Testing
+
+```bash
+python tools/test.py configs/rsmamba/name_to_config.py ${CHECKPOINT_FILE}  # name_to_config.py is the configuration file you want to use, CHECKPOINT_FILE is the checkpoint file you want to use
+````
 
